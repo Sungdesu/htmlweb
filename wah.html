@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SungPage - Home</title>
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+<head>
+  <style>
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #navbar {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 70px 10px;
+      transition: 0.4s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+    }
+    
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 10px;
+      margin-right: 30px;
+    }
+    
+    #navbar #logo {
+      font-size: 35px;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+    
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    
+    #navbar-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 10px !important;
+      }
+      #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #navbar-right {
+        float: none;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="navbar">
+      <a href="#default" id="logo">SSSHHHHeeeeeeeeeeeeeeeeesSSSHHHHH</a>
+      <div id="navbar-right">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+      <i class="material-icons" style="font-size:50px">settings</i>
+      </div>
+    </div>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+    </script>
+        </head>
+
+        <style>
+          body, html {
+            height: 100%;
+            margin-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hdbackground.jpg");
+            border-bottom: 30px solid dodgerblue;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            border-radius: 0 0 85% 85% / 10%;
+          }
+          
+          .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+          }
+          
+          .hero-text button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+          }
+          
+          .hero-text button:hover {
+            background-color: #555;
+            color: white;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">Welcome to my Website!</h1>
+              <p>And it is still work in progress</p>
+              <button>this is a test</button>
+            </div>
+          </div>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+</style>
+</head>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  </style>
+  </head>
+  <body>
+    <h2 align="center">Meet the Team!</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/penguin.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h2>Sung</h2>
+          <p class="title">Page Creator</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/bob-ross.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h2>Bob Ross</h2>
+          <p class="title">Its Bob Ross</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="images/pepe.png" alt="Avatar" style="width:100%" style="max-height:10%">
+        <div class="container">
+          <h2>Pepe</h2>
+          <p class="title">Pepe the Frog</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 30px;
+      border: none;
+      outline: none;
+      background-color: rgb(255, 216, 44);
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style>
+  <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+    
+    <div style="background-color:black;color:white;padding:15px">I AM SO COOL HEHEHEHEHE</div>
+    <div style="background-color:white;padding:30px 30px 30px">
+      <strong></strong>.</div>
+    
+    <script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+<style>
+  body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .diduknow-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/did you know.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .diduknow-text {
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="diduknow-image">
+    <div class="diduknow-text">
+      <h1 style="color: #e9b544; font-size:80px;">Not so Fun Fact</h1>
+      <p style="font-size:40px">Super Mario Land is darker than you thought.</p>
+      <p style="font-family:'verdana'">Remember all those squares you need to hop on while playing the OG Mario? Well, those are actually the people of the Mushroom Kingdom turned into blocks by the Koopas.</p>
+    </div>
+  </div>
+
+  <style>
+    body {
+      height: 1080;
+      width: 1980;
+      overflow-x: hidden;
+    }
+    </style>
+
