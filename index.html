@@ -3,8 +3,6 @@
     <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SungPage - Home</title>
-        <link
-        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,93 +12,131 @@
         </div>
 <head>
   <style>
-    * {box-sizing: border-box;}
-    
-    body { 
+    body {
+      font-family: "Lato", sans-serif;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
     }
     
-    #navbar {
+    .navbar {
       overflow: hidden;
-      background-color: #f1f1f1;
-      padding: 70px 10px;
-      transition: 0.4s;
+      background-color: #333;
       position: fixed;
-      width: 100%;
       top: 0;
-      z-index: 99;
+      width: 100%;
     }
     
-    #navbar a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px; 
-      line-height: 25px;
-      border-radius: 10px;
-      margin-right: 30px;
-    }
-    
-    #navbar #logo {
-      font-size: 35px;
-      font-weight: bold;
-      transition: 0.4s;
-    }
-    
-    #navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    #navbar a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
-    
-    #navbar-right {
+    .navbar a {
       float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .navbar-left {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
     }
     
-    @media screen and (max-width: 580px) {
-      #navbar {
-        padding: 20px 10px !important;
-      }
-      #navbar a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      #navbar-right {
-        float: none;
-      }
+    .navbar a:hover {
+      background: dodgerblue;
+      color: black;
+    
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .active {
+      background: dodgerblue;
+      color: #111;
+    }
+      
+    
+    #main {
+      margin-left: .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
     }
     </style>
     </head>
+    
     <body>
     
-    <div id="navbar">
-      <a href="#default" id="logo">SSSHHHHeeeeeeeeeeeeeeeeesSSSHHHHH</a>
-      <div id="navbar-right">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">AY</a>
+      <a href="#">LABYU</a>
+      <a href="#">SO</a>
+      <a href="#">MUCH</a>
+    </div>
+    
+
+    <div class="navbar">
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
       <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <i class="material-icons" style="font-size:50px">settings</i>
+      
+      <div>
+        <a class="navbar-left" id= main style="cursor:pointer" onclick="openNav()">&#9776;</a>
       </div>
     </div>
-    <script>
-    window.onscroll = function() {scrollFunction()};
     
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
-      } else {
-        document.getElementById("navbar").style.padding = "80px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-      }
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
     }
     </script>
+       
+    </body>
         </head>
 
         <style>
@@ -113,12 +149,13 @@
           .hero-image {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hdbackground.jpg");
             border-bottom: 30px solid dodgerblue;
-            height: 100%;
+            height: 90%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
             border-radius: 0 0 85% 85% / 10%;
+            margin-top: 60px;
           }
           
           .hero-text {
@@ -142,11 +179,10 @@
           }
           
           .hero-text button:hover {
-            background-color: #555;
-            color: white;
+            background-color: dodgerblue;
+            color: black;
           }
           </style>
-          </head>
           <body>
           
           <div class="hero-image">
@@ -156,6 +192,7 @@
               <button>this is a test</button>
             </div>
           </div>
+          
 <style>
 body, html {
   height: 100%;
@@ -309,38 +346,40 @@ body, html {
   
   .diduknow-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/did you know.jpg");
-    height: 50%;
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 40px;
   }
   
   .diduknow-text {
     text-align: left;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 20%;
     transform: translate(-20%, -50%);
     color: white;
   }
+  body {
+  overflow-x: hidden;
+}
   </style>
   </head>
   <body>
   
   <div class="diduknow-image">
     <div class="diduknow-text">
-      <h1 style="color: #e9b544; font-size:80px;">Not so Fun Fact</h1>
+      <h1 style="color: #e9b544; font-size:80px;"><strong>Not so Fun Fact</strong></h1>
       <p style="font-size:40px">Super Mario Land is darker than you thought.</p>
       <p style="font-family:'verdana'">Remember all those squares you need to hop on while playing the OG Mario? Well, those are actually the people of the Mushroom Kingdom turned into blocks by the Koopas.</p>
     </div>
   </div>
-
-  <style>
-    body {
-      height: 1080;
-      width: 1980;
-      overflow-x: hidden;
-    }
-    </style>
-
+      
+<style>
+  body {
+  overflow-x: hidden;
+}
+</style>
+  
