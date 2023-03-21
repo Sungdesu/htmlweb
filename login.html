@@ -2,54 +2,54 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body, html {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-* {
-  box-sizing: border-box;
-}
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hdbackground.jpg");
+    border-bottom: 30px solid dodgerblue;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 0 0 85% 85% / 10%;
+    margin-top: 60px;
 
-.bg-img {
-  background-image: url("images/saitama.png");
-  height: 80%;
+    }
 
-  min-height: 380px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-}
-
-input[type=text], input[type=password] {
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+  margin-bottom: 15px;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
   outline: none;
 }
 
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
 .btn {
-  background-color: #04AA6D;
+  background-color: dodgerblue;
   color: white;
-  padding: 16px 20px;
+  padding: 15px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -63,20 +63,25 @@ input[type=text]:focus, input[type=password]:focus {
 </head>
 <body>
 
-<h2>Form on Hero Image</h2>
-<div class="bg-img">
-  <form action="/action_page.php" class="container">
-    <h1>Login</h1>
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <h2>Register Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+  <button type="submit" class="btn">Register</button>
+</form>
 
-    <button type="submit" class="btn">Login</button>
-  </form>
-</div>
 
-</body>
 </html>
