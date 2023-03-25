@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +12,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
 <head>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: "Lato", sans-serif;
@@ -123,7 +126,7 @@
       <a href="" class="fa fa-home"> Home</a>
       <a href="">Unified Modeling Language</a>
       <a href="">Behavioral Diagram</a>
-      <a href="">Structual Diagram</a>
+      <a href="">Structure Diagram</a>
       <a href="">Socials</a>
       <a href="">More...</a>
     </div>
@@ -175,7 +178,6 @@
             background-size: cover;
             position: relative;
             border-radius: 0 0 85% 85% / 10%;
-
             margin-bottom: 100px;
           }
           
@@ -297,6 +299,14 @@ body, html {
       padding: 10px;
       box-shadow: 10px 15px;
     }
+    .learnleft {
+      margin-bottom: 100px;
+      margin-left: 100px;
+      width: 800px;
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 10px 15px;
+    }
     .umltext {
     font-size: 20px;
     padding-left: 60px;
@@ -304,12 +314,12 @@ body, html {
     }
     .bhvtext {
     font-size: 20px;
-    padding-right: 60px;
+    padding-right: 250px;
     float: right;
     }
     .strtext {
     font-size: 20px;
-    padding-left: 60px;
+    padding-left: 200px;
     float: left;
     }
     </style>
@@ -330,58 +340,35 @@ body, html {
       <p>The UML uses mostly graphical notations to express the design of software projects.
       </div>
     <img src="images/learn.jpg" alt="uml" class="learn">
-    </style>
     <h1 align="right" style="font-size:70px; margin-bottom:60px; margin-right:100px;"><strong>WHAT IS BEHAVIORAL DIAGRAM?</strong></h1>
     <div class="bhvtext">
       
-        <P>In a behavior diagram, individual aspects of a system and their changes are displayed at runtime.
+        <P>In a <strong>Behavior Diagram</strong>, individual aspects of a system and their changes are displayed at runtime.
         <P>A behavior diagram is intended to provide clarity, for example, about internal processes, business
         <P>processes or the interaction of different systems. 
         Depending on the diagram used, 
-        <p>a selected aspect is shown. In the Unified Modeling Language (UML), 
-        <P>objects are modeled that can change their states through behavior. Basically, UML distinguishes 
-        between two different behavior specifications:
+        <p>a selected aspect is shown. In the <b>Unified Modeling Language (UML)</b>, 
+        <P>objects are modeled that can change their states through behavior. Basically,
+        <p>UML distinguishes between two different behavior specifications: 
+        
           <ul>
-        <P>- Comon Behaviors Model
-        <P>- Communication Model
+        <P><strong>- Comon Behaviors Model</strong></P>
+        <P><strong>- Communication Model</strong></P>
         </ul>
     </div>
+    <img src="images/bhvdiagram.jpg" alt="uml" class="learnleft">
 
+    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:100px;"><strong>What Does Structure Diagram Mean?</strong></h1>
+    <div class="strtext">
+      <p>A <strong>Structure Diagram</strong> is a conceptual modeling tool used to document
+      <p>the different structures that make up a system such as a database or an application.
+      <p>It shows the hierarchy or structure of the different components
+      <p>or modules of the system and shows how they connect and interact with each other.
+      <p>It is a tool used to guide developers to ensure that all parts
+      <p>of the system work as intended in relation to all the other parts.
+    </div>
+    <img src="images/strdiagram.jpg" alt="uml" class="learn">
   </body>
-  <body>
-    <h1 align="center" style="font-size:30px"><strong>Meet the Team!</strong></h1>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/penguin.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h2>Sung</h2>
-          <p class="title">Page Creator</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/bob-ross.jpg" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h2>Bob Ross</h2>
-          <p class="title">Its Bob Ross</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <img src="images/pepe.png" alt="Avatar" style="width:100%" style="max-height:10%">
-        <div class="container">
-          <h2>Pepe</h2>
-          <p class="title">Pepe the Frog</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -430,8 +417,6 @@ body, html {
       document.documentElement.scrollTop = 0;
     }
     </script>
-
-
 <style>
   body{
     height: 100%;
@@ -441,14 +426,18 @@ body, html {
   
   .diduknow-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/did you know.jpg");
+    border-top: 30px solid dodgerblue;
+    border-bottom: 30px solid dodgerblue;
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     margin-bottom: 40px;
+    margin-top: 50px;
+    border-radius: 40px;
   }
-  
+
   .diduknow-text {
     text-align: left;
     position: absolute;
@@ -488,3 +477,249 @@ body, html {
       background: #555; 
     }
     </style>
+    <body>
+      <h1 align="center" style="font-size:50px"><strong><a class="fa fa-anchor" color="black"></a> Meet the Anchor Team! <a class="fa fa-anchor"></a></strong></h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/penguin.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h2>Sung</h2>
+            <p class="title">Page Creator</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/bob-ross.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h2>Bob Ross</h2>
+            <p class="title">Its Bob Ross</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="images/pepe.png" alt="Avatar" style="width:100%" style="max-height:10%">
+          <div class="container">
+            <h2>Pepe</h2>
+            <p class="title">Pepe the Frog</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.discord:hover
+{
+  background-color:#0044ff
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">This website is about the <i>UML Project</i> it is meant for a school project i do not know how you got this or were but, Since you are here come check us out! </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">Go Back Home</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021-2023 All Rights Reserved by 
+         <a href="#">Sung/The Anchor Team</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="discord" href="#"><i class="fab fa-discord"></i></a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+  
