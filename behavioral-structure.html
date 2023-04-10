@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Anchor - Home</title>
+        <meta content="PROJECT UML" property="og:title"/>
+        <meta content="Sung's Page about the UML and More..." property="og:description"/>
+        <meta content="This is web for a school project" property="og:description"/>
+        <meta content="https://embed.com/this-is-the-site-url" property="og:url"/>
+        <meta content="https://embed.com/embedimage.png" property="og:image"/>
+        <meta content="#43B581" data-react-helmet="true" name="theme-color"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      margin: 0;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color:rgba(97, 97, 97, 0.8);
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 1;
+      height: 60px;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .navbar-left {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    .navbar a:hover {
+      background: dodgerblue;
+      color: black;
+    
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      white-space: nowrap;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 6px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    
+    .sidenav a:hover {
+      color: lime;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .active {
+      background: dodgerblue;
+      color: #111;
+    }
+      
+    
+    #main {
+      margin-left: .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    .logo-image {
+    width: 100px;
+    height: 45px;
+    margin-top: -6px;
+    
+    }
+    .bg {
+      background-color: rgb(19, 19, 26);
+    }
+    </style>
+    <body>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="" class="fa fa-home"> Home</a>
+      <a href="">Unified Modeling Language</a>
+      <a href="">Behavioral Diagram</a>
+      <a href="">Structure Diagram</a>
+      <a href="">Socials</a>
+      <a href="" style="margin-top: 620px;"> Help us</a>
+      <a href="">More...</a>
+    </div>
+    <div class="navbar">
+      <a href=""><script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/hbvyhtse.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            state="hover"
+            style="width:36px;height:36px">
+        </lord-icon></a>
+      <a href="">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/tftaqjwp.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            state="hover-phone-ring-signal"
+            style="width:36px;height:36px">
+        </lord-icon>
+      </a>
+      <a class="active" href="">
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/slduhdil.json"
+    trigger="hover"
+    colors="primary:#ffffff"
+    state="hover-2"
+    style="width:36px;height:36px">
+</lord-icon></a>
+      
+      <div>
+        <a class="navbar-left" id= main style="cursor:pointer" onclick="openNav()"><i class="fa fa-navicon" style="font-size:30px"></i></a>
+        <a class="navbar-left" href="">
+          <div class="logo-image">
+                <img src="images/anchor_logo.png">
+          </div>
+    </a>
+      </div>
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+       
+    </body>
+        </head>
+
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+</style>
+</head>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  </style>
+
+  </style>
+  </body>
+  <style>
+    .learn {
+      margin-bottom: 100px;
+      margin-left: 100px;
+      width: 800px;
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 10px 15px;
+    }
+    .learnleft {
+      margin-bottom: 100px;
+      margin-left: 100px;
+      width: 800px;
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 10px 15px;
+    }
+    .umltext {
+    font-size: 20px;
+    padding-left: 60px;
+    float: left;
+    color: white
+    }
+    .bhvtext {
+    font-size: 20px;
+    padding-right: 250px;
+    float: right;
+    color: white
+    }
+    .strtext {
+    font-size: 20px;
+    padding-left: 200px;
+    float: left;
+    color: white
+    }
+    </style>
+  <body>
+    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:270px; color: white"><strong>WHAT IS UML?</strong></h1>
+    <div class="umltext">
+      
+      <P>Short for <strong>Unified Modeling Language,</strong> 
+      is a standardized modeling language consisting of an integrated set of diagrams,
+      <p>developed to help system and software developers for
+      specifying, visualizing, constructing,
+      <p>documenting the artifacts of software systems,
+      as well as for business modeling and other non-software systems.
+      <p>The UML represents a collection of best engineering practices
+      <p>that have proven successful in the modeling of large and complex systems.
+      <p>The UML is a very important part of developing object oriented software
+      and the software development process.
+      <p>The UML uses mostly graphical notations to express the design of software projects.
+      </div>
+  </body>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index:99;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      padding: 0px;
+      border-radius: 50px;
+    }
+    </style>
+  <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/xdakhdsq.json"
+          trigger="hover"
+          colors="primary:#e8b730"
+          style="width:60px;height:60px">
+      </lord-icon></button>
+    
+    <script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  <style>
+.button-1 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
+
+.button-1:disabled {
+  pointer-events: none;
+}
+
+.button-1:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  color: lime;
+  background-color:#151c22;
+}
+
+.button-1:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+  </style>
+  <h1 class="text-justify" style="color:white; font-size:60px; text-align: center; margin-bottom: 4%;">READ MORE</h1>
+  <button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">UNIFIED MODELING LANGUAGE (UML)</button>
+  <a href="behavioral-structure.html"><button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">Behavioral Diagram</button></a>
+  <button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">Structural Diagram</button>
+  
+
+  <style>
+    body {
+  background-color: #222222;
+  font-family: Helvetica, sans-serif;
+}
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #151c22; 
+    }
+     
+    ::-webkit-scrollbar-thumb {
+      background: rgb(226, 171, 21); 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    </style>
+    <style>
+.site-footer
+{
+  background-color:#151c22;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  margin-top: 20%;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:lime;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:lime;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+</style>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">This website is about the <i>UML Project</i> it is meant for a school project i do not know how you got this or were but, Since you are here come check us out! </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">Go Back Home kid</a></li>
+              <li><a href="">Contacts</a></li>
+              <li><a href="">Unified Modeling Language Page</a></li>
+              <li><a href="">Behavioral Page</a></li>
+              <li><a href="">Stuctural Page</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021-2023 All Rights Reserved by 
+         <a href="#">Sung</a>.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+</footer>
+  
