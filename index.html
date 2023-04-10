@@ -3,8 +3,9 @@
     <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Anchor - Home</title>
-        <meta content="Embed Title" property="og:title"/>
+        <meta content="PROJECT UML" property="og:title"/>
         <meta content="Sung's Page about the UML and More..." property="og:description"/>
+        <meta content="This is web for a school project" property="og:description"/>
         <meta content="https://embed.com/this-is-the-site-url" property="og:url"/>
         <meta content="https://embed.com/embedimage.png" property="og:image"/>
         <meta content="#43B581" data-react-helmet="true" name="theme-color"/>
@@ -12,8 +13,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
-<head>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <style>
     body {
@@ -68,19 +67,21 @@
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
+      white-space: nowrap;
     }
     
     .sidenav a {
-      padding: 8px 8px 8px 32px;
+      padding: 8px 8px 6px 32px;
       text-decoration: none;
       font-size: 25px;
       color: #818181;
       display: block;
       transition: 0.3s;
     }
+
     
     .sidenav a:hover {
-      color: #f1f1f1;
+      color: lime;
     }
     
     .sidenav .closebtn {
@@ -117,8 +118,6 @@
       background-color: rgb(19, 19, 26);
     }
     </style>
-    </head>
-    
     <body>
     
     <div id="mySidenav" class="sidenav">
@@ -128,14 +127,37 @@
       <a href="">Behavioral Diagram</a>
       <a href="">Structure Diagram</a>
       <a href="">Socials</a>
+      <a href="" style="margin-top: 620px;"> Help us</a>
       <a href="">More...</a>
     </div>
-    
-
     <div class="navbar">
-      <a href=""><i class="fa fa-user-circle" style="font-size:36px"></i></a>
-      <a href=""><i class="fa fa-phone" style="font-size:36px"></i></a>
-      <a class="active" href=""><i class="fa fa-home" style="font-size:36px"></i></a>
+      <a href=""><script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/hbvyhtse.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            state="hover"
+            style="width:36px;height:36px">
+        </lord-icon></a>
+      <a href="">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/tftaqjwp.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            state="hover-phone-ring-signal"
+            style="width:36px;height:36px">
+        </lord-icon>
+      </a>
+      <a class="active" href="">
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/slduhdil.json"
+    trigger="hover"
+    colors="primary:#ffffff"
+    state="hover-2"
+    style="width:36px;height:36px">
+</lord-icon></a>
       
       <div>
         <a class="navbar-left" id= main style="cursor:pointer" onclick="openNav()"><i class="fa fa-navicon" style="font-size:30px"></i></a>
@@ -149,7 +171,7 @@
     
     <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "350px";
       document.getElementById("main").style.marginLeft = "250px";
     }
     
@@ -171,7 +193,6 @@
           
           .hero-image {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/full_background.png");
-            border-bottom: 30px solid rgb(226, 171, 21);
             height: 90%;
             background-position: center;
             background-repeat: no-repeat;
@@ -179,6 +200,7 @@
             position: relative;
             border-radius: 0 0 85% 85% / 10%;
             margin-bottom: 100px;
+
           }
           
           .hero-text {
@@ -242,7 +264,7 @@ body, html {
   .column {
     float: left;
     width: 33.3%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 50px;
     padding: 0 8px;
   }
@@ -311,20 +333,23 @@ body, html {
     font-size: 20px;
     padding-left: 60px;
     float: left;
+    color: white
     }
     .bhvtext {
     font-size: 20px;
     padding-right: 250px;
     float: right;
+    color: white
     }
     .strtext {
     font-size: 20px;
     padding-left: 200px;
     float: left;
+    color: white
     }
     </style>
   <body>
-    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:270px;"><strong>WHAT IS UML?</strong></h1>
+    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:270px; color: white"><strong>WHAT IS UML?</strong></h1>
     <div class="umltext">
       
       <P>Short for <strong>Unified Modeling Language,</strong> 
@@ -340,7 +365,7 @@ body, html {
       <p>The UML uses mostly graphical notations to express the design of software projects.
       </div>
     <img src="images/learn.jpg" alt="uml" class="learn">
-    <h1 align="right" style="font-size:70px; margin-bottom:60px; margin-right:100px;"><strong>WHAT IS BEHAVIORAL DIAGRAM?</strong></h1>
+    <h1 align="right" style="font-size:70px; margin-bottom:60px; margin-right:100px; color: white"><strong>WHAT IS BEHAVIORAL DIAGRAM?</strong></h1>
     <div class="bhvtext">
       
         <P>In a <strong>Behavior Diagram</strong>, individual aspects of a system and their changes are displayed at runtime.
@@ -358,7 +383,7 @@ body, html {
     </div>
     <img src="images/bhvdiagram.jpg" alt="uml" class="learnleft">
 
-    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:100px;"><strong>What Does Structure Diagram Mean?</strong></h1>
+    <h1 align="left" style="font-size:70px; margin-bottom:60px; margin-left:100px; color: white"><strong>What Does Structure Diagram Mean?</strong></h1>
     <div class="strtext">
       <p>A <strong>Structure Diagram</strong> is a conceptual modeling tool used to document
       <p>the different structures that make up a system such as a database or an application.
@@ -384,20 +409,22 @@ body, html {
       font-size: 20px;
       border: none;
       outline: none;
-      background-color: rgb(226, 171, 21);
+      background-color: transparent;
       color: rgb(255, 255, 255);
       cursor: pointer;
-      padding: 15px;
+      padding: 0px;
       border-radius: 50px;
-    }
-    
-    #myBtn:hover {
-      background-color: #555;
     }
     </style>
   <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/xdakhdsq.json"
+          trigger="hover"
+          colors="primary:#e8b730"
+          style="width:60px;height:60px">
+      </lord-icon></button>
     
     <script>
     let mybutton = document.getElementById("myBtn");
@@ -460,7 +487,87 @@ body, html {
       <p style="font-family:'verdana'">Remember all those squares you need to hop on while playing the OG Mario? Well, those are actually the people of the Mushroom Kingdom turned into blocks by the Koopas.</p>
     </div>
   </div>
+  <h1 class="text-justify" style="margin-left:25%; margin-right:25%; margin-top: 200px; color:white; font-size:75px;">A little introduction to UML</h1>
+  <p class="text-justify" style="margin-left:25%; margin-right:25%; color:white;">Learn about the most important UML diagrams used in the visual modeling of software</p>
+  <p class="text-justify" style="margin-left:25%; margin-right:25%; margin-top:3%; margin-bottom: 50px; color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Way back in the late twentieth century -- 1997 to be exact -- the Object Management Group (OMG) released the Unified Modeling Language (UML). One of the purposes of UML was to provide the development community with a stable and common design language that could be used to develop and build computer applications. UML brought forth a unified standard modeling notation that IT professionals had been wanting for years. Using UML, IT professionals could now read and disseminate system structure and design plans -- just as construction workers have been doing for years with blueprints of buildings.</p>
+  <p class="text-justify" style="margin-left:25%; margin-right:25%; margin-bottom:8%; color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is now the twenty-first century and UML has gained traction in our profession. On 75 percent of the resumes I see, there is a bullet point claiming knowledge of UML. However, after speaking with a majority of these job candidates, it becomes clear that they do not truly know UML. Typically, they are either using it as a buzz word, or they have had a sliver of exposure to UML. This lack of understanding inspired me to write this quick introduction to UML, focused on the basic diagrams used in visual modeling. When you are finished reading you will not have enough knowledge to put UML on your resume, but you will have a starting point for digging more deeply into the language.</p>
   <style>
+.button-1 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
+
+.button-1:disabled {
+  pointer-events: none;
+}
+
+.button-1:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  color: lime;
+  background-color:#151c22;
+}
+
+.button-1:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+  </style>
+  <h1 class="text-justify" style="color:white; font-size:60px; text-align: center; margin-bottom: 4%;">READ MORE</h1>
+  <button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">UNIFIED MODELING LANGUAGE (UML)</button>
+  <a href="behavioral-structure.html"><button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">Behavioral Diagram</button></a>
+  <button class="button-1" role="button" style="margin-left:500px; margin-bottom: 10px;">Structural Diagram</button>
+  
+  <p class="text-justify" style="margin-left:20%; margin-top:5%; margin-bottom: 1%; color:white; font-size: 30px;">More related about the topic talked About</p>
+  <style>
+    .link-more {
+      color: #ddd;
+      margin-left: 20%;
+      margin-right: 50%;
+      font-size: 20px;
+      padding: 8px 8px 8px;
+      float: left;
+    }
+
+    .link-more:hover {
+      color: lime;
+      font-size: 21px;
+    }
+  </style>
+  <a class="link-more" href="">o What is HTML</a>
+  <a class="link-more" href="">o What is CSS</a>
+  <a class="link-more" href="">o How to create your own website with HTML</a>
+  <a class="link-more" href="">o How to create your own website with CSS</a>
+  <a class="link-more" href="">o How to make your crush like you back</a>
+  <a class="link-more" href="">o How to make your website online</a>
+  <style>
+    body {
+  background-color: #222222;
+  font-family: Helvetica, sans-serif;
+}
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -477,47 +584,15 @@ body, html {
       background: #555; 
     }
     </style>
-    <body>
-      <h1 align="center" style="font-size:50px"><strong><a class="fa fa-anchor" color="black"></a> Meet the Anchor Team! <a class="fa fa-anchor"></a></strong></h1>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="images/penguin.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h2>Sung</h2>
-            <p class="title">Page Creator</p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="column">
-        <div class="card">
-          <img src="images/bob-ross.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h2>Bob Ross</h2>
-            <p class="title">Its Bob Ross</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="card">
-          <img src="images/pepe.png" alt="Avatar" style="width:100%" style="max-height:10%">
-          <div class="container">
-            <h2>Pepe</h2>
-            <p class="title">Pepe the Frog</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <style>
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#151c22;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#737373;
+  margin-top: 20%;
 }
 .site-footer hr
 {
@@ -542,7 +617,7 @@ body, html {
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:lime;
   text-decoration:none;
 }
 .footer-links
@@ -560,7 +635,7 @@ body, html {
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:lime;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -603,73 +678,6 @@ body, html {
     text-align:center
   }
 }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.discord:hover
-{
-  background-color:#0044ff
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
 </style>
     <footer class="site-footer">
       <div class="container">
@@ -680,25 +688,13 @@ body, html {
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="">Go Back Home</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a href="">Go Back Home kid</a></li>
+              <li><a href="">Contacts</a></li>
+              <li><a href="">Unified Modeling Language Page</a></li>
+              <li><a href="">Behavioral Page</a></li>
+              <li><a href="">Stuctural Page</a></li>
             </ul>
           </div>
         </div>
@@ -708,16 +704,9 @@ body, html {
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2021-2023 All Rights Reserved by 
-         <a href="#">Sung/The Anchor Team</a>.
+         <a href="#">Sung</a>.
             </p>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="discord" href="#"><i class="fab fa-discord"></i></a></li> 
-            </ul>
           </div>
         </div>
       </div>
