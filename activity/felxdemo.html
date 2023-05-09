@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+body {
+    font: 600 14px/24px "Open Sans",
+    "HelveticaNeue-light"
+    "Helvetica Neue Light"
+    "Helvetica Neue"
+    Helvetica, Arial
+    "Lucia Grande"
+    Sans-Serif;
+}
+h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.container:before, container:after {
+    content: "";
+    display:table;
+}
+.container:after{
+    clear: both;
+}
+.container{
+    background: navy;
+    margin-bottom: 24px;
+    *zoom: 1;
+}
+.container-75 {
+    width: 75%;
+}
+.container-50{
+    margin-bottom: 0;
+    width: 50%;
+}
+.container, section, aside{
+    border-radius: 6px;
+}
+section, aside{
+    background: rgb(89, 255, 89);
+    color: black;
+    margin: 1.858636059%;
+    padding: 20px 0;
+    text-align: center;
+}
+section {
+    float: right;
+    width: 63.197026%;
+}
+aside {
+    float: right;
+    width: 29.3680297%;
+}
+</style>
+</head>
+<body>
+<h1>100% Wide Container UwU</h1>
+<div class="container">
+    <section>Section</section>
+    <aside>UwU Button</aside>
+</div>
+<h1>75% Wide Container UwU</h1>
+<div class="container container-75">
+    <section>Section</section>
+    <aside>UwU Button</aside>
+</div>
+<h1>50% Wide Container UwU</h1>
+<div class="container container-50">
+    <section>Section</section>
+    <aside>UwU Button</aside>
+</div>
+</body>
+</html>
